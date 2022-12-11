@@ -1,7 +1,7 @@
 {
   "name": "uoc-boilerplate",
   "version": "3.5.0",
-  "description": "Test tailwind usage. Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Tailwind usage for some pages created. Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",

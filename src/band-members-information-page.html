@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo.png">
+    <title>Información de la banda</title>
+  </head>
+
+  <body class="font-body-sans-serif bg-grey-light">
+    <include
+      src="./views/header.html"
+      locals='{
+        "bandMemberPageActive": "active border-bottom border-primary border-3",
+        "bandMemberCurrentPage": "page",
+        "articlePageActive": "",
+        "articleCurrentPage": "false",
+        "thirdPageActive": "",
+        "thirdCurrentPage": "false"
+      }'
+    ></include>
+
+    <main>
+      <section class="container">
+        <h1 class="">Nir Va Ni Viene - Miembros</h1>
+        <div class="">
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-singer.jpg",
+              "name": "Bruce Pickinson",
+              "position": "Cantante",
+              "catchPhrase": "Como los de Alicante."
+            }'
+          ></include>
+
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-guitar.jpg",
+              "name": "Jhonny (Splash)",
+              "position": "Guitarrista",
+              "catchPhrase": "Cinco cuerdas mejor que cinco teclas."
+            }'
+          ></include>
+
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-battery.jpg",
+              "name": "Li-Ion (Alcalino) Ulritz",
+              "position": "Bateria",
+              "catchPhrase": "No tengo pinzas pero si dos baquetas."
+            }'
+          ></include>
+
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-bass-guitar.jpg",
+              "name": "Jack Trambolico",
+              "position": "Bajista",
+              "catchPhrase": "Hay que saber subir y bajar."
+            }'
+          ></include>
+
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-pianist.jpg",
+              "name": "Nastic Key",
+              "position": "Teclista",
+              "catchPhrase": "Teclado en mano y visado sellado."
+            }'
+          ></include>
+
+          <include
+            src="./views/card.html"
+            locals='{
+              "image": "./assets/images/member-tambourine.jpg",
+              "name": "Tam Borine",
+              "position": "Percusionista",
+              "catchPhrase": "No Tambourine no life."
+            }'
+          ></include>
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

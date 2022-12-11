@@ -1,0 +1,36 @@
+<header>
+  <nav class="pt-4 pb-2 bg-blue-100">
+    <div class="container flex justify-between">
+      <a class="" href="./index.html">
+        <picture>
+          <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
+          <img src="./assets/images/logo.png" alt="Nir Va Ni Viene logo" width="50" height="50" />
+        </picture>
+      </a>
+      <button
+        class=""
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class=""></span>
+      </button>
+      <div class="" id="navbarNav">
+        <ul class="flex justify-end">
+          <li class="block">
+            <a class="my-1 {{bandMemberPageActive}}" aria-current="{{bandMemberCurrentPage}}" href="band-members-information-page.html">Miembros</a>
+          </li>
+          <li class="block">
+            <a class="my-1 {{articlePageActive}}" aria-current="{{articleCurrentPage}}" href="#">Artículos</a>
+          </li>
+          <li class="block">
+            <a class="my-1 {{thirdPageActive}}" aria-current="{{thirdCurrentPage}}" href="#">Conocenos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
