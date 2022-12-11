@@ -1,0 +1,33 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@layer components {
+  .container {
+    @apply sm:w-[100%] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+  }
+}
+
+/**
+ * Do NOT include anything else in this file!
+ */
