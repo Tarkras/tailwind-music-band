@@ -1,14 +1,14 @@
 <header>
   <nav class="pt-4 pb-2 bg-blue-100">
-    <div class="container flex justify-between">
-      <a class="" href="./index.html">
+    <div class="container flex max-[992px]:justify-between">
+      <a class="ml-2 mr-4" href="./index.html">
         <picture>
           <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
-          <img src="./assets/images/logo.png" alt="Nir Va Ni Viene logo" width="50" height="50" />
+          <img class="h-[3.125rem]" src="./assets/images/logo.png" alt="Nir Va Ni Viene logo" width="50" height="50" />
         </picture>
       </a>
       <button
-        class=""
+        class="block lg:hidden w-14 h-10 self-center px-3 py-1 border-solid border-[1px] border-black/[.1] rounded-md text-xl leading-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -16,18 +16,18 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class=""></span>
+        <span class="inline-block"><i class="fa-solid fa-bars align-middle text-blue-200 text-xl leading-none"></i></span>
       </button>
-      <div class="" id="navbarNav">
-        <ul class="flex justify-end">
-          <li class="block">
-            <a class="my-1 {{bandMemberPageActive}}" aria-current="{{bandMemberCurrentPage}}" href="band-members-information-page.html">Miembros</a>
+      <div class="hidden lg:flex grow basis-auto justify-end" id="navbarNav">
+        <ul class="flex justify-end items-center">
+          <li class="">
+            <a class="block my-1 px-4 font-bold {{bandMemberPageActive}}" aria-current="{{bandMemberCurrentPage}}" href="band-members-information-page.html">Miembros</a>
           </li>
-          <li class="block">
-            <a class="my-1 {{articlePageActive}}" aria-current="{{articleCurrentPage}}" href="#">Artículos</a>
+          <li class="">
+            <a class="block my-1 px-4 font-bold {{articlePageActive}}" aria-current="{{articleCurrentPage}}" href="#">Artículos</a>
           </li>
-          <li class="block">
-            <a class="my-1 {{thirdPageActive}}" aria-current="{{thirdCurrentPage}}" href="#">Conocenos</a>
+          <li class="">
+            <a class="block my-1 px-4 font-bold {{thirdPageActive}}" aria-current="{{thirdCurrentPage}}" href="#">Conocenos</a>
           </li>
         </ul>
       </div>
