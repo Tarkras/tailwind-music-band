@@ -42,6 +42,11 @@ module.exports = {
     container: {
       center: true,
       'padding': '.75rem'
+    },
+    extend: {
+      aria: {
+        currPage: 'current="page'
+      }
     }
   },
   plugins: [],

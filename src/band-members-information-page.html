@@ -10,20 +10,17 @@
     <title>Información de la banda</title>
   </head>
 
-  <body class="font-body-sans-serif bg-grey-light">
+  <body class="flex flex-col min-h-screen font-body-sans-serif bg-grey-light">
     <include
       src="./views/header.html"
       locals='{
-        "bandMemberPageActive": "text-blue-500 border-solid border-b-[3px] border-blue-200",
         "bandMemberCurrentPage": "page",
-        "articlePageActive": "text-blue-200",
         "articleCurrentPage": "false",
-        "thirdPageActive": "text-blue-200",
         "thirdCurrentPage": "false"
       }'
     ></include>
 
-    <main>
+    <main class="flex-1">
       <section class="container">
         <h1 class="">Nir Va Ni Viene - Miembros</h1>
         <div class="">
