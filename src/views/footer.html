@@ -124,10 +124,13 @@
         border-blue-200
         py-4 md:py-2"
       >
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
-        <img class="h-[3.125rem] md:ml-2" src="./assets/images/logo.png" alt="Nir Va Ni Viene logo" width="50" height="50" />
-      </picture>
+      <include
+        src="./views/logo.html"
+        locals='{
+          "logoImage": "./assets/images/logo.png",
+          "altText": "Nir Va Ni Viene logo"
+        }'
+      ></include>
 
       <ul class="flex flex-col sm:flex-row flex-wrap py-2"><!--Check align-items center-->
         <li class="self-center">
