@@ -1,33 +1,129 @@
 <footer class="bg-blue-100">
   <div class="container">
-    <section class="">
-      <div class="">
-        <h3 class=""><i class="footer__icon fa-solid fa-phone"></i>¿Necesitas mas información? ¡Contactanos!</h3>
-        <p>Envianos un correo a la dirección <a class="" href="mailto:contacthell666@nirvaniviene.com">contacthell666@nirvaniviene.com</a></p>
-        <p>O contactanos por Whatsapp,Telegram o llamanos al número <a class="" href="tel:666666666">+34 666 666 666</a></p>
+    <section class="flex flex-col sm:flex-row gap-4 flex-wrap sm:flex-nowrap h-auto lg:h-[14.375rem] mx-4 py-4">
+      <div class="flex-1">
+        <h3 class="mb-2 text-blue-200 font-medium text-[calc(1.3rem+.6vw)] xl:text-[1.75rem] leading-[1.2] underline">
+          <i class="footer__icon fa-solid fa-phone pr-2"></i>¿Necesitas mas información? ¡Contactanos!
+        </h3>
+        <p class="mb-4">Envianos un correo a la dirección 
+          <a
+            class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+            href="mailto:contacthell666@nirvaniviene.com">
+              contacthell666@nirvaniviene.com
+          </a>
+        </p>
+        <p class="mb-4">O contactanos por Whatsapp,Telegram o llamanos al número 
+          <a
+            class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+            href="tel:666666666">
+              +34 666 666 666
+          </a>
+        </p>
       </div>
 
-      <div class="">
-        <h3 class=""><i class="footer__icon fa-solid fa-envelope"></i>Suscribete a nuestra Newsletter!</h3>
+      <div class="flex-1">
+        <h3 class="mb-2 text-blue-200 font-medium text-[calc(1.3rem+.6vw)] xl:text-[1.75rem] leading-[1.2] underline">
+          <i class="footer__icon fa-solid fa-envelope pr-2"></i>Suscribete a nuestra Newsletter!
+        </h3>
         <form name="newsletter" method="POST" data-netlify="true">
-          <div class="">
-            <label for="email" class="">Correo electrónico</label>
-            <input type="email" class="" id="email" name="email" required>
+          <div class="mb-4">
+            <label for="email" class="inline-block mb-2">Correo electrónico</label>
+            <input
+              type="email"
+              class="appearance-none
+                block
+                w-full
+                py-1.5
+                px-3
+                bg-grey-100
+                bg-clip-padding
+                border-solid
+                border-[1px]
+                border-grey-200
+                focus:border-dirty-blue
+                rounded-md
+                outline-0
+                focus:shadow-[0_0_0_0.25rem_rgb(16,76,117,0.25)]"
+              id="email"
+              name="email"
+              required
+            >
           </div>
-          <div class="">
-            <div class="">
-              <input type="checkbox" class="" id="privacyPolicy" required>
-              <label class="" for="privacyPolicy">
-                Acepto la <a class="" href="#" data-bs-toggle="modal" data-bs-target="#privacy-policy">Política de Privacidad</a>
+          <div class="flex justify-between items-center">
+            <div class="block min-h-[1.5rem] pl-[1.5em] mb-0.5">
+              <!--TODO: tick-->
+              <input
+                type="checkbox"
+                class="appearance-none
+                  block
+                  float-left
+                  w-[1em]
+                  h-[1em]
+                  mt-1
+                  ml-[-1.5em]
+                  checked:text-white
+                  bg-grey-100
+                  checked:bg-blue-200
+                  enabled:active:brightness-90
+                  focus:shadow-[0_0_0_#104c75_.25]
+                  border-solid border-[1px]
+                  border-black/25
+                  focus:border-dirty-blue
+                  rounded
+                  outline-0
+                  focus:shadow-[0_0_0_0.25rem_rgb(16,76,117,0.25)]"
+                id="privacyPolicy"
+                required
+              >
+              <label class="inline-block" for="privacyPolicy">
+                Acepto la 
+                <a
+                  class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacy-policy"
+                >
+                  Política de Privacidad
+                </a>
               </label>
             </div>
-            <button type="submit" class="">Suscribir</button>
+            <button
+              type="submit"
+              class="py-1
+                px-2
+                ml-4
+                text-white
+                text-sm
+                leading-normal
+                font-semibold
+                bg-blue-200
+                hover:bg-blue-300
+                border-solid
+                border-[1px]
+                border-blue-200
+                hover:border-blue-400
+                rounded"
+            >
+              Suscribir
+            </button>
           </div>
         </form>
       </div>
     </section>
   
-    <section class="flex flex-col md:flex-row justify-between items-center h-auto md:h-[4.375rem] border-solid border-t-[1px] border-blue-200 py-4 md:py-2">
+    <section
+      class="flex
+        flex-col
+        md:flex-row
+        justify-between
+        items-center
+        h-auto
+        md:h-[4.375rem]
+        border-solid
+        border-t-[1px]
+        border-blue-200
+        py-4 md:py-2"
+      >
       <picture>
         <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
         <img class="h-[3.125rem] md:ml-2" src="./assets/images/logo.png" alt="Nir Va Ni Viene logo" width="50" height="50" />
@@ -50,19 +146,29 @@
 
       <ul class="flex flex-wrap py-2">
         <li>
-          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#"><span class="sr-only">Google</span><i class="fa-brands fa-google-plus-g"></i></a>
+          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#">
+            <span class="sr-only">Google</span><i class="fa-brands fa-google-plus-g"></i>
+          </a>
         </li>
         <li>
-          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
+          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#">
+            <span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i>
+          </a>
         </li>
         <li>
-          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#"><span class="sr-only">Twitter</span><i class="fa-brands fa-twitter"></i></a>
+          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#">
+            <span class="sr-only">Twitter</span><i class="fa-brands fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#"><span class="sr-only">Instagram</span><i class="fa-brands fa-instagram"></i></a>
+          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#">
+            <span class="sr-only">Instagram</span><i class="fa-brands fa-instagram"></i>
+          </a>
         </li>
         <li>
-          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#"><span class="sr-only">Twitch</span><i class="fa-brands fa-twitch"></i></a>
+          <a class="block px-2 font-bold text-blue-200 hover:text-blue-500" href="#">
+            <span class="sr-only">Twitch</span><i class="fa-brands fa-twitch"></i>
+          </a>
         </li>
       </ul>
     </section>
