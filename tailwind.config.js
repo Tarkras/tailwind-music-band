@@ -10,7 +10,7 @@ module.exports = {
         100: '#f7f7f7', // Body and checkbox
         200: '#ced4da',
         300: '#6c757d',
-        300: '#212529'
+        400: '#212529'
       },
       'blue': {
         100: '#cee7f8', // Secondary
