@@ -56,6 +56,7 @@
                 type="checkbox"
                 class="appearance-none
                   block
+                  relative
                   float-left
                   w-[1em]
                   h-[1em]
@@ -71,7 +72,13 @@
                   focus:border-dirty-blue
                   rounded
                   outline-0
-                  focus:shadow-[0_0_0_0.25rem_rgb(16,76,117,0.25)]"
+                  focus:shadow-[0_0_0_0.25rem_rgb(16,76,117,0.25)]
+                  checked:before:content-['\f00c']
+                  checked:before:font-fontawesome
+                  checked:before:text-[10px]
+                  checked:before:absolute
+                  checked:before:top-[-0.325rem]
+                  checked:before:left-0.5"
                 id="privacyPolicy"
                 required
               >
