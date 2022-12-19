@@ -6,12 +6,26 @@
           src="./views/logo.html"
           locals='{
             "logoImage": "./assets/images/logo.png",
-            "altText": "Nir Va Ni Viene logo"
+            "altText": "Nir Va Ni Viene logo",
+            "classStyle": "h-[3.125rem] md:ml-2"
           }'
         ></include>
       </a>
       <button
-        class="block lg:hidden w-14 h-10 self-center px-3 py-1 border-solid border border-black/[.1] focus:shadow-[0_0_0_.25rem] focus:shadow-blue-200 rounded-md text-xl leading-none"
+        class="block
+          lg:hidden
+          w-14 h-10
+          self-center
+          px-3
+          py-1
+          border-solid
+          border
+          border-black/[.1]
+          focus:shadow-[0_0_0_.25rem]
+          focus:shadow-blue-200
+          rounded-md
+          text-xl
+          leading-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -19,18 +33,65 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="inline-block"><i class="fa-solid fa-bars inline-block align-baseline text-blue-200 text-2xl leading-none"></i></span>
+        <span class="inline-block">
+          <i class="fa-solid fa-bars inline-block align-baseline text-blue-200 text-2xl leading-none"></i>
+        </span>
       </button>
       <div class="hidden lg:flex grow basis-auto justify-end" id="navbarNav">
         <ul class="flex justify-end items-center">
           <li>
-            <a class="block my-1 px-4 font-bold text-blue-200 hover:text-blue-500 aria-[current=page]:text-blue-500 aria-[current=page]:border-solid aria-[current=page]:border-b-[3px] aria-[current=page]:border-blue-200" aria-current="{{bandMemberCurrentPage}}" href="band-members-information-page.html">Miembros</a>
+            <a
+              class="block
+                my-1
+                px-4
+                font-bold
+                text-blue-200
+                hover:text-blue-500
+                aria-[current=page]:text-blue-500
+                aria-[current=page]:border-solid
+                aria-[current=page]:border-b-[3px]
+                aria-[current=page]:border-blue-200"
+              aria-current="{{bandMemberCurrentPage}}"
+              href="band-members-information-page.html"
+            >
+              Miembros
+            </a>
           </li>
           <li>
-            <a class="block my-1 px-4 font-bold text-blue-200 hover:text-blue-500 aria-[current=page]:text-blue-500 aria-[current=page]:border-solid aria-[current=page]:border-b-[3px] aria-[current=page]:border-blue-200" aria-current="{{articleCurrentPage}}" href="#">Artículos</a>
+            <a
+              class="block
+                my-1
+                px-4
+                font-bold
+                text-blue-200
+                hover:text-blue-500
+                aria-[current=page]:text-blue-500
+                aria-[current=page]:border-solid
+                aria-[current=page]:border-b-[3px]
+                aria-[current=page]:border-blue-200"
+              aria-current="{{articleCurrentPage}}"
+              href="#"
+            >
+              Artículos
+            </a>
           </li>
           <li>
-            <a class="block my-1 px-4 font-bold text-blue-200 hover:text-blue-500 aria-[current=page]:text-blue-500 aria-[current=page]:border-solid aria-[current=page]:border-b-[3px] aria-[current=page]:border-blue-200" aria-current="{{thirdCurrentPage}}" href="videos-page.html">Conocenos</a>
+            <a
+              class="block
+                my-1
+                px-4
+                font-bold
+                text-blue-200
+                hover:text-blue-500
+                aria-[current=page]:text-blue-500
+                aria-[current=page]:border-solid
+                aria-[current=page]:border-b-[3px]
+                aria-[current=page]:border-blue-200"
+              aria-current="{{thirdCurrentPage}}"
+              href="videos-page.html"
+            >
+              Conocenos
+            </a>
           </li>
         </ul>
       </div>
