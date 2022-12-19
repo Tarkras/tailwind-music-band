@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo.png">
+    <title>Conocenos</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen font-body-sans-serif font-normal text-base text-grey-400 bg-grey-100">
+    <include
+      src="./views/header.html"
+      locals='{
+        "bandMemberCurrentPage": "false",
+        "articleCurrentPage": "false",
+        "thirdCurrentPage": "page"
+      }'
+    ></include>
+
+    <main class="flex-1">
+      <section class="container pt-8 pb-12">
+        <h1 class="mb-2 text-center font-bold text-[calc(1.375rem+1.5vw)] xl:text-[2.5rem] leading-[1.2] text-blue-200 underline">
+          Nuestros videos!
+        </h1>
+        <div class="">
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube-nocookie.com/embed/WGVHF7dvasw",
+              "videoName": "Video one"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube-nocookie.com/embed/DKP16d_WdZM",
+              "videoName": "Video two"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube.com/embed/VVkMoXTlrrI",
+              "videoName": "Video three"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube.com/embed/G1IbRujko-A",
+              "videoName": "Video four"
+            }'
+          ></include>
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>
