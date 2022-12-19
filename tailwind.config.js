@@ -36,7 +36,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"'
       ],
-      'fontawesome': ['fontawesome']
+      'bootstrap': ['bootstrap-icons']
     },
     screens: {
       'sm': '576px',

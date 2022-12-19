@@ -7,14 +7,14 @@
         </h3>
         <p class="mb-4">Envianos un correo a la dirección 
           <a
-            class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+            class="link"
             href="mailto:contacthell666@nirvaniviene.com">
               contacthell666@nirvaniviene.com
           </a>
         </p>
         <p class="mb-4">O contactanos por Whatsapp,Telegram o llamanos al número 
           <a
-            class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+            class="link"
             href="tel:666666666">
               +34 666 666 666
           </a>
@@ -51,7 +51,6 @@
           </div>
           <div class="flex justify-between items-center">
             <div class="block min-h-[1.5rem] pl-[1.5em] mb-0.5">
-              <!--TODO: tick-->
               <input
                 type="checkbox"
                 class="appearance-none
@@ -73,19 +72,23 @@
                   rounded
                   outline-0
                   focus:shadow-[0_0_0_0.25rem_rgb(16,76,117,0.25)]
-                  checked:before:content-['\f00c']
-                  checked:before:font-fontawesome
-                  checked:before:text-[10px]
+                  font-bold
+                  checked:before:content-['\F26E']
+                  checked:before:inline-block
+                  checked:before:font-bootstrap
+                  checked:before:text-base
                   checked:before:absolute
-                  checked:before:top-[-0.325rem]
-                  checked:before:left-0.5"
+                  checked:before:top-[0.1rem]
+                  checked:before:left-[-0.08rem]
+                  checked:before:leading-[0.6]
+                  checked:before:float-left"
                 id="privacyPolicy"
                 required
               >
               <label class="inline-block" for="privacyPolicy">
                 Acepto la 
                 <a
-                  class="text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold"
+                  class="link"
                   href="#"
                   data-bs-toggle="modal"
                   data-bs-target="#privacy-policy"
@@ -121,22 +124,22 @@
     <section
       class="flex
         flex-col
-        md:flex-row
+        lg:flex-row
         justify-between
         items-center
         h-auto
-        md:h-[4.375rem]
+        lg:h-[4.375rem]
         border-solid
         border-t-[1px]
         border-blue-200
-        py-4 md:py-2"
+        py-4 lg:py-2"
       >
       <include
         src="./views/logo.html"
         locals='{
           "logoImage": "./assets/images/logo.png",
           "altText": "Nir Va Ni Viene logo",
-          "classStyle": "h-[3.125rem] md:ml-2"
+          "classStyle": "h-[3.125rem] lg:ml-2"
         }'
       ></include>
 
