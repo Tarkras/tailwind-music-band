@@ -22,39 +22,43 @@
 
     <main class="flex-1">
       <section class="container pt-8 pb-12">
-        <h1 class="mb-2 text-center font-bold text-[calc(1.375rem+1.5vw)] xl:text-[2.5rem] leading-[1.2] text-blue-200 underline">
+        <h1 class="mb-6 text-center font-bold text-[calc(1.375rem+1.5vw)] xl:text-[2.5rem] leading-[1.2] text-blue-200 underline">
           Nuestros videos!
         </h1>
-        <div class="">
+        <div class="flex flex-wrap gap-4">
           <include
-            src="./views/video.html"
+            src="./views/multimedia-yt-video.html"
             locals='{
               "videoUrl": "https://www.youtube-nocookie.com/embed/WGVHF7dvasw",
-              "videoName": "Video one"
+              "videoName": "Video one",
+              "classStyle": "flex flex-[1_1_calc(50%-1rem)] w-[200px]"
             }'
           ></include>
 
           <include
-            src="./views/video.html"
+            src="./views/multimedia-yt-video.html"
             locals='{
               "videoUrl": "https://www.youtube-nocookie.com/embed/DKP16d_WdZM",
-              "videoName": "Video two"
+              "videoName": "Video two",
+              "classStyle": "flex flex-[1_1_calc(50%-1rem)]"
             }'
           ></include>
 
           <include
-            src="./views/video.html"
+            src="./views/multimedia-yt-video.html"
             locals='{
               "videoUrl": "https://www.youtube.com/embed/VVkMoXTlrrI",
-              "videoName": "Video three"
+              "videoName": "Video three",
+              "classStyle": "flex flex-[1_1_calc(50%-1rem)]"
             }'
           ></include>
 
           <include
-            src="./views/video.html"
+            src="./views/multimedia-yt-video.html"
             locals='{
               "videoUrl": "https://www.youtube.com/embed/G1IbRujko-A",
-              "videoName": "Video four"
+              "videoName": "Video four",
+              "classStyle": "flex flex-[1_1_calc(50%-1rem)]"
             }'
           ></include>
         </div>
