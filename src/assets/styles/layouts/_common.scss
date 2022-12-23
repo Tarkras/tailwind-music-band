@@ -8,10 +8,10 @@
   }
 
   .btn-primary {
-    @apply text-white leading-normal font-semibold bg-blue-200 hover:bg-blue-300 border-solid border border-blue-200 hover:border-blue-400 rounded;
+    @apply text-white font-semibold bg-blue-200 hover:bg-blue-300 border-solid border border-blue-200 hover:border-blue-400 rounded;
   }
 
   .btn-sm {
-    @apply text-sm py-1 px-2;
+    @apply text-sm leading-normal  py-1 px-2;
   }
 }
