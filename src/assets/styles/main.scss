@@ -25,15 +25,7 @@
  * It's a best practice to use a different partial for each page
  */
 
-@layer components {
-  .container {
-    @apply w-[100%] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
-  }
-
-  .link {
-    @apply text-blue-200 hover:text-blue-500 underline hover:no-underline font-semibold;
-  }
-}
+@import "./layouts/common";
 
 /**
  * Do NOT include anything else in this file!

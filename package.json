@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
   },
-  "homepage": "https://github.com/Tarkras/tailwind-tes#readme",
+  "homepage": "https://github.com/Tarkras/tailwind-music-band#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "autoprefixer": "^10.4.8",
